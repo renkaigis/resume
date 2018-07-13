@@ -1,3 +1,0 @@
-## Personal Resume
-
-不要急嘛，慢慢来…
