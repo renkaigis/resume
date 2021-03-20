@@ -1,3 +1,5 @@
 # Personal Resume
 
-准备用 `html` 写一个静态的，没时间，慢慢来~
+我的个人电子简历 - 任凯
+
+My Personal Electronic Resume - Kai Ren
