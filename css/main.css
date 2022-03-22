@@ -3036,7 +3036,7 @@ footer .copyright span:last-child::after {
 	}
 
 	footer .copyright span {
-		display: block;
+		/* display: block; */
 	}
 
 	footer .copyright span::after {
