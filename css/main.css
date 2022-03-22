@@ -1907,8 +1907,8 @@ header .logo a {
 
 @media only screen and (max-width:768px) {
 	.intro-info img {
-		height: 10.8rem;
-		width: 10.8rem;
+		height: 16rem;
+		width: 12rem;
 	}
 
 	.intro-info .lead {
@@ -1941,8 +1941,8 @@ header .logo a {
 	}
 
 	.intro-info img {
-		height: 9.6rem;
-		width: 9.6rem;
+		height: 16rem;
+		width: 12rem;
 		float: none;
 		display: inline-block;
 	}
