@@ -803,7 +803,8 @@ input[type="button"] {
 	height: 5.4rem;
 	line-height: 5.4rem;
 	padding: 0 3rem;
-	margin: 0 .3rem 1.2rem 0;
+	/* margin: 0 .3rem 1.2rem 0; */
+	margin: 0 .3rem 4rem 0;
 	background: #d8d8d8;
 	color: #313131;
 	text-decoration: none;
@@ -1803,7 +1804,8 @@ header .logo a {
  */
 #about {
 	background: #FFFFFF;
-	padding-top: 12rem;
+	padding-top: 4rem;
+	/* padding-top: 12rem; */
 	padding-bottom: 15rem;
 }
 
