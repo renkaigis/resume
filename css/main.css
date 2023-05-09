@@ -2673,7 +2673,8 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #contact {
-	background: #151515;
+	/* background: #151515; */
+	background: #131313;
 	padding-top: 12rem;
 	padding-bottom: 7.2rem;
 }
@@ -2964,6 +2965,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 footer {
+	background: #131313;
 	padding-bottom: 3rem;
 	font-size: 1.4rem;
 	font-family: "poppins-regular", sans-serif;
