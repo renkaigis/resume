@@ -1723,6 +1723,10 @@ header .logo a {
  * --------------------------------------------------------------- 
  */
 @media only screen and (max-width:1024px) {
+	#intro {
+		background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+	}
+
 	.intro-content h1 {
 		font-size: 7.6rem;
 	}
@@ -1738,6 +1742,7 @@ header .logo a {
 
 @media only screen and (max-width:768px) {
 	#intro {
+		background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 		min-height: 660px;
 	}
 
@@ -1764,6 +1769,7 @@ header .logo a {
 
 @media only screen and (max-width:600px) {
 	#intro {
+		background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 		min-height: 600px;
 	}
 
