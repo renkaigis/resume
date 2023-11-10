@@ -19,6 +19,21 @@
  *
  * ------------------------------------------------------------------- 
  */
+
+.highlight_word {
+	font-weight: 600;
+	color: #333;
+
+}
+
+.highlight_word:hover,
+.highlight_word:focus,
+.highlight_word:active {
+	font-weight: 600;
+	color: #FF0077;
+}
+
+
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
@@ -418,7 +433,7 @@ textarea {
 	float: left;
 }
 
-[class*="col-"] + [class*="col-"].end {
+[class*="col-"]+[class*="col-"].end {
 	float: right;
 }
 
@@ -604,7 +619,7 @@ textarea {
 		padding: 0;
 	}
 
-	[class*="col-"] + [class*="col-"].end {
+	[class*="col-"]+[class*="col-"].end {
 		float: none;
 	}
 
