@@ -21,9 +21,7 @@
  */
 
 .highlight_word {
-	font-weight: 600;
-	color: #333;
-
+	font-weight: 900;
 }
 
 .highlight_word:hover,
