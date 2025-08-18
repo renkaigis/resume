@@ -7,3 +7,57 @@
     text-decoration: underline;
     color: purple;
 }
+
+
+/* ===== Gallery Masonry (3 columns) ===== */
+#gallery {
+/* background: #FFFFFF; */
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.gallery-masonry {
+  column-count: 3;        /* 三列瀑布流 */
+  column-gap: 12px;       /* 列间距更紧 */
+}
+
+@media (max-width: 1024px) { .gallery-masonry { column-count: 2; } }
+@media (max-width: 640px)  { .gallery-masonry { column-count: 1; } }
+
+.gallery-card {
+  display: inline-block;     /* 关键：让 figure 参与多列流 */
+  width: 100%;
+  margin: 0 0 12px;          /* 行间距更紧 */
+  break-inside: avoid;       /* 避免跨列断开 */
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  background: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+  transform: translateY(6px);
+  opacity: 0;
+  transition: transform .4s ease, opacity .4s ease, box-shadow .25s ease;
+}
+
+.gallery-card.in-view {
+  transform: none;
+  opacity: 1;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: auto;       /* 保持原比例（竖图完美） */
+  display: block;
+}
+
+.gallery-card figcaption {
+  padding: 8px 10px;
+  font-size: .9em;
+  line-height: 1.45;
+  color: #ddd;
+  background: #0f0f0f;   /* 独立说明区，不覆盖图片 */
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+
+.gallery-card:hover { box-shadow: 0 6px 16px rgba(0,0,0,.18); }

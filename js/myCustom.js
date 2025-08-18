@@ -22,3 +22,29 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+/* Masonry reveal */
+(function($){
+  $(document).ready(function(){
+    var $items = $('.gallery-card');
+    if (!$items.length) return;
+
+    var reveal = function(entries, observer) {
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(reveal, {
+        root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.15
+      });
+      $items.each(function(){ io.observe(this); });
+    } else {
+      $items.addClass('in-view');
+    }
+  });
+})(jQuery);
