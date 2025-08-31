@@ -8,6 +8,11 @@
     color: purple;
 }
 
+.paper_title{
+    text-decoration: none;
+    color: lightseagreen;
+}
+
 
 /* ===== Gallery Masonry (3 columns) ===== */
 #gallery {
